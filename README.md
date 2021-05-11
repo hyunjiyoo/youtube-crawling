@@ -15,3 +15,5 @@
 2. PyTube API로 영상 다운로드
 3. ffmpeg코덱과 subprocess모듈 이용하여 mp4파일을 mp3로 변환
 4. 오픈소스 참고하여 음성파일을 음성파형 이미지로 변환.
+
+[영상크롤링.pdf](https://github.com/hyunjiyoo/youtube-crawling/files/6457630/default.pdf)
