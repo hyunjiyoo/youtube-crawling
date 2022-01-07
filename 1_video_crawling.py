@@ -9,15 +9,16 @@ soup = bs(html, 'html.parser')
 videos = soup.select('a.yt-uix-tile-link')
 titles = []
 for i in range(len(videos)):
-titles.append(videos[i].get_text())
-titles[i] = titles[i].replace('|', '')
-titles[i] = titles[i].replace('?', '')
-titles[i] = titles[i].replace('\'', '')
-titles[i] = titles[i].replace(',', '')
-titles[i] = titles[i].replace('.', '')
-titles[i] = titles[i].replace(' ', '_')
+  titles.append(videos[i].get_text())
+  titles[i] = titles[i].replace('|', '')
+  titles[i] = titles[i].replace('?', '')
+  titles[i] = titles[i].replace('\'', '')
+  titles[i] = titles[i].replace(',', '')
+  titles[i] = titles[i].replace('.', '')
+  titles[i] = titles[i].replace(' ', '_')
+  
 # url과 추출한 link 합치기
 videolist = []
 for v in videos:
-tmp = 'https://www.youtube.com' + v['href']
-videolist.append(tmp)
+  tmp = 'https://www.youtube.com' + v['href']
+  videolist.append(tmp)
